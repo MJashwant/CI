@@ -1,4 +1,4 @@
-name: MacOS SSH to GitHub Actions
+name: MacOS SSH to GitHub Action
 
 on:
   workflow_dispatch:
