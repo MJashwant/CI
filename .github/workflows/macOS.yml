@@ -44,8 +44,6 @@ jobs:
       continue-on-error: true
       timeout-minutes: 350
       uses: P3TERX/ssh2actions@main
-      with:
-        mode: tmate
       env:
         # Send connection info to Telegram (optional)
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
