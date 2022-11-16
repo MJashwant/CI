@@ -17,7 +17,6 @@ jobs:
         git config --global --list
         git config --global credential.helper store
         echo "https://JaswantTeja:${{ secrets.ACCOUNT_TOKEN }}@github.com" > ~/.git-credentials
-        git clone https://github.com/Jaswant-Dumpyard/kernel_realme_r5x kernel
     - name: SSH Keepalive Hack
       run: |
         mkdir -p ~/.ssh
