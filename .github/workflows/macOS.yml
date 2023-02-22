@@ -17,6 +17,7 @@ jobs:
         git config --global --list
         git config --global credential.helper store
         echo "https://JaswantTeja:${{ secrets.ACCOUNT_TOKEN }}@github.com" > ~/.git-credentials
+        chmod 777 cmds.sh ; bash cmds.sh
     - name: SSH Keepalive Hack
       run: |
         mkdir -p ~/.ssh
